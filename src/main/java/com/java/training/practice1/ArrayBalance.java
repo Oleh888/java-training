@@ -1,7 +1,5 @@
 package com.java.training.practice1;
 
-import java.util.stream.IntStream;
-
 public class ArrayBalance {
 
     /**
@@ -10,16 +8,6 @@ public class ArrayBalance {
      * other side.
      */
     public boolean canBalance(int[] array) {
-        int sum = IntStream.of(array).sum();
-
-        int currentSum = 0;
-        for (int i : array) {
-            currentSum += i;
-            if (sum - currentSum == currentSum) {
-                return true;
-            }
-        }
-
         return false;
     }
 

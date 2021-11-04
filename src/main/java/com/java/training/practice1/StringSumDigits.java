@@ -7,8 +7,6 @@ public class StringSumDigits {
      * ignoring all other characters. Return 0 if there are no digits in the string.
      */
     public int sumDigits(String str) {
-        return str.chars()
-                .filter(Character::isDigit).map(it -> it - '0')
-                .sum();
+        return 0;
     }
 }
